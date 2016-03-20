@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>HomeMade.com</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gian Piero Cozzula">
+        <meta name="description" content="Descrizione del sito di e-commerce">
+        <meta name="keywords" content="home made, food, drink">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header id="header">
+            <h1>HomeMade.com</h1>
+        </header>
+        
+        <nav id="nav">
+            <ul>
+                <li><a href="./descrizione.html">Descrizione</a></li>
+                <li><a href="./login.html">Login</a></li>               
+            </ul>
+        </nav>
+        <div id="content">
+            
+            <div class="input_form">
+            <h2>Aggiungi articolo</h2>
+                <form method="get">
+                    <label for="objName">Nome dell'oggetto:</label>
+                    <input type="text" name="objName" id="objName" value="Inserire il nome del prodotto" />
+                    <br>
+                    <label for="urlPhoto">Foto dell'oggetto:</label>
+                    <input type="url" name="urlPhoto" id="urlPhoto" value="Inserie url"/>
+                    <br>
+                    <textarea rows="5" cols="25" name="objDescr" id="objDescr">Inserire una descrizione del prodotto...</textarea>
+                    <br>
+                    <label for="objQt">Quantit&agrave;</label>
+                    <input type="number" name="objQt" id="objQt"/>
+                    <br>
+                    <input type="submit" value="Pubblica articolo"/>
+                    <br>
+                    <input type="reset" value="Reset"/>
+                        
+
+
+                </form>
+            </div>
+            
+        </div>
+        
+        
+        
     </body>
+    
 </html>
