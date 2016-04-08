@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomeMade.com</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gian Piero Cozzula">
+        <meta name="description" content="Pagina venditore del sito HomeMade.com">
+        <meta name="keywords" content="home made, idee regalo, cosmetici, utensili, fatto in casa">
+        <link href="./style.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <div id='header'>
+                    <h1>HomeMade.com</h1>
+                </div>
+            </header>
+
+            <!-- sezione di navigazione del sito-->
+
+            <div id="nav">
+                <ul>
+                    <li><a href="./descrizione.html">Descrizione</a></li>
+                    <li><a href="./login.html">Login</a></li>               
+                </ul>
+            </div>
+            <div id="sideBar">
+                <ul>
+                        <li><a>Modifica Annuncio</a></li>
+                        <li><a>Storico Vendite</a></li>
+                </ul>
+            </div>
+            <!--CONTENT-->
+
+            <div id="content">   
+                <h2 class="contentTitle">Aggiungi articolo</h2>
+                <!--form pubblicazione articolo-->
+                
+                <div class="input_form" id="vendorContent">
+                    
+                    <form method="get">
+                        <div>
+                            <label for="objName">Nome dell'oggetto:
+                                <input type="text" name="objName" id="objName" placeholder="Inserire il nome del prodotto" />
+                            </label>
+                        </div>
+                        <div>
+                            <label for="urlPhoto">Carica una foto:
+                                <input type="url" name="urlPhoto" id="urlPhoto" placeholder="Inserire url della foto dell'oggetto"/>
+                            </label>
+                        </div>
+                        <textarea rows="5" cols="25" name="objDescr" id="objDescr" placeholder="Inserire una descrizione del prodotto..."></textarea>
+                        <div>
+                            <label for="objQt">Quantit&agrave;:
+                                <input type="number" name="objQt" id="objQt"/>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="objPrice">Prezzo:
+                                <input type="number" name="objPrice" id="objPrice"/>
+                            </label>        
+                        </div>
+                        <input type="submit" class="formButton" value="Pubblica articolo"/>
+            
+                        <input type="reset" class="formButton" value="Reset"/>
+
+
+
+                    </form>
+                </div>
+
+            </div>
+            <div id="clear"></div>
+            <div id="footer"></div>
+
+        
+    </div>
+    </body>
+    
+</html>
