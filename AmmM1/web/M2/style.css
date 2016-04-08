@@ -4,32 +4,34 @@
     background-color: #DFE5F0;
     
 }
-#header{
+
+#header,#footer{
     height: 150px;
     border: solid 2px #6897E8;
     margin-top: 30px;
     background-color: white;
 }
+
 body{
     font-size: 16px;
     font-family: "Arial", Open Sans, sans-serif;
     color: black;
     background-color: #ffffb3;
-    
 }
 
 h1, h2, h3{
     margin: 0px;
-    
 }
+
 #nav{
     background-color: #b3d9ff;
     margin-top: 5px;
-    margin-bottom: 70px;
-    
+    margin-bottom: 70px;  
 }
+
 #content{
     margin-left: 254px;
+    margin-right: 52px;
     background-color: white;
     border: solid 2px #6897E8;
     position: relative;
@@ -43,6 +45,7 @@ h1, h2, h3{
     background-color: white;
     min-height: 500px;
 }
+
 #clear {
     clear: both;
     width: 0px;
@@ -50,6 +53,7 @@ h1, h2, h3{
 }
 
 /*******  Stile Tabelle ********/
+
 table{
     margin: 30px;
     border-collapse: collapse;
@@ -59,14 +63,16 @@ table th,td{
     border: 2px solid #6897E8;
     
 }
+
 table th{
     background-color: #6897E8;
     color: white;
-    
 }
+
 table tr{
     background-color: #d2e0f9;
 }
+
 table tr:nth-child(even) {   
     background-color: #e9f0fc;
 }
@@ -101,6 +107,7 @@ ul{
 
 #loginContent input[type="text"], input[type="password"]{
     width: 100%;
+    box-sizing: border-box;
     height: 45px;
     border-radius: 10px;
     background-color: #DFE5F0;
@@ -108,11 +115,11 @@ ul{
     border: 2px solid #7EA4E6;
     margin-bottom: 10px;
     margin-top: 10px;
-    
 }
-
 #loginContent label{
-    margin-left: 40%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 /********   Stile Form Venditore   *******/
@@ -131,12 +138,12 @@ ul{
     margin-top: -2px;
     margin-bottom: -1px;
 }
+
 #vendorContent div{
      border: 2px solid #7EA4E6;
      margin-top: -2px;
      width: 99%;
 }
-
 
 .formButton{
     width: 44%;
@@ -152,11 +159,13 @@ ul{
     top: 182px;
     width: 100%;
 }
+
 #nav ul li{
     background-color: white;
     list-style-type:none;
     margin-right: 10px;
 }
+
 #nav a{
     margin-right: 15px;
     float: left;
@@ -176,15 +185,15 @@ ul{
     color: white;
 }
 
-
 /*** Stile contenuto right bar  ***/
+
 #sideBar ul li{
     background-color: yellow;
     list-style-type:none;
     margin-top: 10px;
     text-align: center;
-    
 }
+
 #sideBar a{
     display: inline-block;
     text-decoration: none;
@@ -195,10 +204,12 @@ ul{
     height: 60px;
     line-height: 60px;
 }
+
 #sideBar ul{
     padding: 0px;
     
 }
+
 #sideBar a:hover {
     background-color: #7EA4E6;
     color: white;
