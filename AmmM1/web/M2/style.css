@@ -22,9 +22,10 @@ body{
     text-align: center;
     margin-top: 10px;
 }
-
-
-
+#sideBar p{
+    margin: 5px;
+    
+}
 #content{
     background-color: white;
     border: solid 2px #ec7500;
@@ -122,6 +123,7 @@ ul{
 .imgCol{
     border: 2px solid #ec7500;
 }
+
 /********   Stile Form Login   *******/
 
 #loginContent input[type="text"], input[type="password"]{
@@ -129,7 +131,7 @@ ul{
     box-sizing: border-box;
     height: 45px;
     border-radius: 10px;
-    background-color: #b3ffcc;
+    background-color: #ffdab3;
     color: #635D5D;
     border: 2px solid #ec7500;
     margin-bottom: 10px;
@@ -139,6 +141,7 @@ ul{
     display: inline-block;
     width: 100%;
     text-align: center;
+    font-size: 18px;
 }
 
 /********   Stile Form Venditore   *******/
@@ -398,14 +401,18 @@ ul{
 }
 #sideBar h2{
     margin-bottom: 5px;
+    font-size: 18px;
+}
+#sideBar{
+    font-size: 14px;
 }
 #objTab{
     margin: 0px;
-    margin-top: 25px;
-    
-    
+    margin-top: 25px; 
 }
-
+#loginContent label{
+    font-size: 15px;
+}
 
 } 
 
