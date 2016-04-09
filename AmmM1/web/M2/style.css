@@ -1,5 +1,5 @@
 #header,#footer{
-    border: solid 4px #cc7a00;
+    border: solid 4px #ec7500;
     background-color: white; 
     margin-top: 30px;
     background-color: #ffcc80;
@@ -27,18 +27,18 @@ body{
 
 #content{
     background-color: white;
-    border: solid 2px #009900;
+    border: solid 2px #ec7500;
     position: relative;
     }
 #sideBar{
-    border: solid 2px #009900;
+    border: solid 2px #ec7500;
     background-color: white;
     }
 h1, h2, h3{
     margin: 0px;
 }
    .contentTitle{
-    background-color: #009900;
+    background-color: #ec7500;
     width: 40%;
     position: absolute;
     text-align: center;
@@ -53,8 +53,7 @@ h1, h2, h3{
     }
 #nav{
     background-color: #b3d9ff;
-    margin-top: 5px;
-    margin-bottom: 70px;  
+    margin-top: 5px; 
 }
 #clear {
     clear: both;
@@ -62,6 +61,9 @@ h1, h2, h3{
     height: 0px;
 }
 /*** Stile Barra Navigazione  ***/
+#nav{
+        margin-bottom: 70px;
+    }
 #nav ul{
     position: absolute;
     width: 100%;
@@ -76,13 +78,13 @@ h1, h2, h3{
     display: inline-block;
     text-decoration: none;
     color: black;
-    border: 2px solid #7EA4E6;
+    border: 2px solid #ec7500;
     text-align: center;
-    background-color: white;
+    background-color: #ec7500;
 }
 
 #nav a:hover {
-    background-color: #7EA4E6;
+    background-color: #ffcc80;
     color: white;
 } 
 /*******  Stile Tabelle ********/
@@ -95,30 +97,31 @@ h1, h2, h3{
 table{
     border-collapse: collapse;
     width: 100%;
-}
-
-table th,td{
-    border: 2px solid #009900;
+    border: 2px solid #ec7500;
     text-align: center;
 }
 
+
 table th{
-    background-color: #009900;
+    background-color: #ec7500;
     font-weight: bold;
     color: white;
 }
 
 table tr{
-    background-color: #d2e0f9;
+    background-color: #ffdab3;
+    border: 2px solid #ec7500;
 }
 
 table tr:nth-child(even) {   
-    background-color: #e9f0fc;
+    background-color: #ffc180;
 }
 ul{
     margin: 0px;
 }
-
+.imgCol{
+    border: 2px solid #ec7500;
+}
 /********   Stile Form Login   *******/
 
 #loginContent input[type="text"], input[type="password"]{
@@ -128,7 +131,7 @@ ul{
     border-radius: 10px;
     background-color: #b3ffcc;
     color: #635D5D;
-    border: 2px solid #7EA4E6;
+    border: 2px solid #ec7500;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -143,36 +146,30 @@ ul{
 #vendorContent input[type="text"],#vendorContent input[type="url"],#vendorContent input[type="number"]{
     height: 30px;
     border: none;
-    width: 99%;
-    
+    width: 99%;  
 }
 
 #vendorContent textarea{
     height: 250px;
-    width: 100%;
-    border-top: none;
-    border-left: none;
-    border-bottom: 2px solid #7EA4E6;
-    box-sizing: border-box;    
-    resize: none;   
+    width: 99.5%;
+    border: 2px solid #ec7500;
+    resize: none; 
+    margin-top: -2px;
 }
 
 #vendorContent div{
-     border-bottom: 2px solid #7EA4E6;
-     
+     border: 2px solid #ec7500;
      width: 100%;
+     margin-top: -3px;
 }
-#vendorContent{
-    border: 2px solid #7EA4E6;
-    
-}
+
 
 .formButton{
     width: 44%;
     margin-top: 20px;
     margin-left: 5%; 
     border-radius: 10px;
-    background-color: #7EA4E6;
+    background-color: #ec7500;
     color:white;
 }
 
@@ -190,7 +187,7 @@ ul{
     text-decoration: none;
     color: black;   
     font-weight: bold;
-    background-color: #f1f3f9;
+    background-color: #ffcc80;
 }
 
 #sideBar ul{
@@ -198,7 +195,7 @@ ul{
 }
 
 #sideBar a:hover {
-    background-color: #7EA4E6;
+    background-color: #ec7500;
     color: white;
 }
 
@@ -261,7 +258,10 @@ ul{
 }
    /**Stile Tabelle **/
    
-   
+   .imgCol{
+    width: 200px;
+    height: 200px;
+   }
    
    
    
@@ -283,7 +283,7 @@ ul{
     margin-left: 204px;
     margin-right: 52px;
     background-color: white;
-    border: solid 2px #009900;
+    border: solid 2px #ec7500;
     position: relative;
     min-width: 700px;
     }
@@ -306,6 +306,7 @@ ul{
     width: 80%;
     }
 /*** Stile Barra Navigazione  ***/
+
 #nav ul{
     top: 132px;
 }
@@ -344,7 +345,7 @@ ul{
 }
    #content{
     background-color: white;
-    border: solid 2px #009900;
+    border: solid 2px #ec7500;
     margin-bottom: 10px;
     position: relative;
     width: 100%;
@@ -361,6 +362,9 @@ ul{
     }
 
 /*** Stile Barra Navigazione  ***/
+#nav{
+        margin-bottom: 30px;
+    }
 #nav ul{
     top: 102px;
     width: 404px;
@@ -382,7 +386,7 @@ ul{
 }
  #sideBar a{
    float: left;
-    border: solid 2px #009900;
+    border: solid 2px #ec7500;
     height: 40px;
     line-height: 40px;
     margin-right: 10px;
@@ -395,5 +399,13 @@ ul{
 #sideBar h2{
     margin-bottom: 5px;
 }
+#objTab{
+    margin: 0px;
+    margin-top: 25px;
+    
+    
+}
+
+
 } 
 
