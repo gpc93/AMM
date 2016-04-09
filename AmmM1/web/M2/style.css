@@ -1,8 +1,7 @@
 #header,#footer{
     border: solid 2px #6897E8;
-    margin-top: 30px;
     background-color: white; 
-
+    margin-top: 30px;
 }
 #page{
     background-color: #DFE5F0;
@@ -35,7 +34,7 @@ h1, h2, h3{
     color: white;
     }
     .input_form{
-    width: 60%;    
+    width: 60%;
     margin-left: 20%;
     margin-right: 20%;
     }
@@ -244,9 +243,11 @@ ul{
    #page{
     margin-left: 0px;
     margin-right: 0px;
+    min-width: 704px;
  }
     #header,#footer{
     height: 100px; 
+    min-width: 700px;
     }  
     
    #content{
@@ -257,7 +258,7 @@ ul{
     position: relative;
     }
    #sideBar{
-       float: left;
+    float: left;
     width: 150px;
     min-height: 400px;
     }
@@ -268,10 +269,15 @@ ul{
     }
 
 .input_form{
-    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 50px;
+    margin-top: 50px;
+    width: 80%;
     }
-
+    #content{
+        min-width: 450px;
+    }
 /*** Stile Barra Navigazione  ***/
 #nav ul{
     top: 132px;
@@ -296,19 +302,21 @@ ul{
 }
 @media only screen and (max-width: 480px){
     #page{
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 440px;
-
+    width: 100%;;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
     #header,#footer{
     height: 100px; 
     width: 100%;
+    margin-top: 0px;
     }  
     
    #content{
     background-color: white;
     border: solid 2px #6897E8;
+    margin-bottom: 10px;
     position: relative;
     width: 100%;
     }
@@ -325,7 +333,7 @@ ul{
 
 /*** Stile Barra Navigazione  ***/
 #nav ul{
-    top: 132px;
+    top: 102px;
     width: 404px;
     margin-right: 79px;
 }
