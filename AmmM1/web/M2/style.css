@@ -4,6 +4,11 @@
     margin-top: 30px;
     background-color: #ffcc80;
 }
+#footer{
+    text-align: center;
+    font-weight: bold;  
+    color: #b35900;
+}
 body{
     font-size: 16px;
     font-family: "Arial","Verdana", Open Sans, sans-serif;
@@ -216,6 +221,9 @@ ul{
     height: 150px;  
     min-width: 951px;
     }  
+    #footer{
+        line-height: 150px;
+    }
     #header h1{
     line-height: 150px;
 }
@@ -277,9 +285,12 @@ ul{
  }
     #header,#footer{
     height: 100px; 
-    min-width: 900px;
+    min-width: 800px;
     }  
-   #header h1{
+    #footer{
+        line-height: 100px;
+    }
+    #header h1{
     line-height: 100px;
 }
    #content{
@@ -288,7 +299,7 @@ ul{
     background-color: white;
     border: solid 2px #ec7500;
     position: relative;
-    min-width: 700px;
+    min-width: 600px;
     }
    #sideBar{
     float: left;
@@ -311,7 +322,7 @@ ul{
 /*** Stile Barra Navigazione  ***/
 
 #nav ul{
-    top: 132px;
+    top: 134px;
 }
 
 #nav a{
@@ -333,7 +344,7 @@ ul{
 }
 @media only screen and (max-width: 480px){
     #page{
-    width: 100%;;
+    width: 458px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -343,6 +354,9 @@ ul{
     width: 100%;
     margin-top: 0px;
     }  
+        #footer{
+        line-height: 100px;
+    }
    #header h1{
     line-height: 100px;
 }
@@ -351,12 +365,13 @@ ul{
     border: solid 2px #ec7500;
     margin-bottom: 10px;
     position: relative;
-    width: 100%;
+    width: 462px;
     }
     .contentTitle{
     height: 30px;
     line-height: 30px;
     top:-20px;
+    margin-top: 10px;
     }
 
 .input_form{
@@ -369,7 +384,7 @@ ul{
         margin-bottom: 30px;
     }
 #nav ul{
-    top: 102px;
+    top: 104px;
     width: 404px;
     margin-right: 79px;
 }
@@ -384,8 +399,7 @@ ul{
 }
 #sideBar ul{
     margin-bottom: 80px;
-    margin-left: 10px;
-    width: 440px;
+    margin-left: 5%;
 }
  #sideBar a{
    float: left;
@@ -393,10 +407,11 @@ ul{
     height: 40px;
     line-height: 40px;
     margin-right: 10px;
+    width: 130px;
 }
 #sideBar{
     margin-bottom: 20px;
-    width: 100%;
+    width: 462px;;
     height: 100px;
 }
 #sideBar h2{
@@ -413,6 +428,12 @@ ul{
 #loginContent label{
     font-size: 15px;
 }
-
+.objImg{
+    width: 100px;
+    height: 100px;
+    
+    
+    
+}
 } 
 
