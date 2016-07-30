@@ -46,7 +46,7 @@ public class HomeMadeFactory {
         try{
             //Ho avuto dei problemi con il collegamento del DB tramite la funzione quindi per verificare la correttezza delle operazioni
             //è stato necessario scrivere direttamente la stringa di connessione
-            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb","gpiero","gpiero");            
+            Connection conn = DriverManager.getConnection(connectionString,"gpiero","gpiero");            
             
             String query = "select * from utenti where "
                     + "password = ? and username = ?";
@@ -80,7 +80,7 @@ public class HomeMadeFactory {
     
     public Prodotto getProdotto(Integer idProdotto){
         try{
-            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb","gpiero","gpiero");            
+            Connection conn = DriverManager.getConnection(connectionString,"gpiero","gpiero");            
             
             String query = "select * from prodotti where "
                     + "idProdotto = ? ";
@@ -117,7 +117,7 @@ public class HomeMadeFactory {
     
     public void eliminaProdotto(Integer idProdotto)throws SQLException{
         
-            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb","gpiero","gpiero");            
+            Connection conn = DriverManager.getConnection(connectionString,"gpiero","gpiero");            
             PreparedStatement stmt=null;
             String query = "delete from prodotti where "
                     + "idProdotto = ? ";
@@ -155,7 +155,7 @@ public class HomeMadeFactory {
     
     public void setProdotto(Integer idUtente, String nome, String linkFoto, String descrizione, Integer qt, Double prezzo) throws SQLException{
     
-        Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb","gpiero","gpiero");
+        Connection conn = DriverManager.getConnection(connectionString,"gpiero","gpiero");
         
         PreparedStatement updateProdotti = null;
     
@@ -201,7 +201,7 @@ public class HomeMadeFactory {
     
     public Double getSaldo(Integer idUtente){
         try{
-            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb","gpiero","gpiero");            
+            Connection conn = DriverManager.getConnection(connectionString,"gpiero","gpiero");            
             
             String query = "select utenteConto from saldo where "
                     + "idUtente = ? ";
@@ -235,7 +235,7 @@ public ArrayList<Prodotto> getProdotti(){
         try 
         {
             // path, username, password
-            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb", "gpiero", "gpiero");
+            Connection conn = DriverManager.getConnection(connectionString, "gpiero", "gpiero");
             Statement stmt = conn.createStatement();
             
             String query = "select * from prodotti";
@@ -273,7 +273,7 @@ public ArrayList<Prodotto> getProdottiById(Integer idUtente){
         try 
         {
             // path, username, password
-            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb", "gpiero", "gpiero");
+            Connection conn = DriverManager.getConnection(connectionString, "gpiero", "gpiero");
             
             
             String query = "select * from prodotti where " + "idUtente=? ";
@@ -314,7 +314,7 @@ public ArrayList<Prodotto> getProdottiById(Integer idUtente){
 
 
 public void updateSaldo(Integer idUtente, Double nuovoSaldo)throws SQLException{
-    Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb", "gpiero", "gpiero");
+    Connection conn = DriverManager.getConnection(connectionString, "gpiero", "gpiero");
     
     PreparedStatement updateSaldo = null;
     
@@ -353,7 +353,7 @@ public void updateSaldo(Integer idUtente, Double nuovoSaldo)throws SQLException{
 
 }
 public void updateProdotto(Integer idProdotto, String nome, String linkFoto, String descrizione, Integer qt, Double prezzo)throws SQLException{
-    Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb", "gpiero", "gpiero");
+    Connection conn = DriverManager.getConnection(connectionString, "gpiero", "gpiero");
     
     PreparedStatement updateProdotto = null;
     
@@ -398,7 +398,7 @@ public void updateProdotto(Integer idProdotto, String nome, String linkFoto, Str
 
 public void compraProdotto(Integer idProdotto, Integer idCliente, Integer quantita, Double contoCliente, Double contoVenditore)throws SQLException{
     
-        Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb", "gpiero", "gpiero");
+        Connection conn = DriverManager.getConnection(connectionString, "gpiero", "gpiero");
         
         PreparedStatement updateProdotti = null;
         PreparedStatement updateContoCliente = null;
@@ -469,7 +469,7 @@ public void compraProdotto(Integer idProdotto, Integer idCliente, Integer quanti
         String query = "SELECT * FROM prodotti "
                 + "WHERE nome LIKE ? OR descrizione LIKE ?";
       
-        try(Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/ammdb", "gpiero", "gpiero");
+        try(Connection conn = DriverManager.getConnection(connectionString, "gpiero", "gpiero");
             PreparedStatement stmt = conn.prepareStatement(query)){
             
             txt = "%"+txt+"%";
